@@ -1,28 +1,31 @@
-public class FilmTitle
+namespace HangmanGame.Models
 {
-    private string title;
-
-    //Constructor
-    public FilmTitle(string title)
+    public class FilmTitle
     {
-        this.title = title.ToUpper();
-    }
+        private string title;
 
-    //Getter
-    public string GetTitle()
-    {
-        return title;
-    }
+        //Constructor
+        public FilmTitle(string title)
+        {
+            this.title = title.ToUpper();
+        }
 
-    //Setter
-    public void SetTitle(string title)
-    {
-        this.title = title.ToUpper();
-    }
+        //Getter
+        public string GetTitle()
+        {
+            return title;
+        }
 
-    public override string ToString()
-    {
-        return title;
-    }
+        //Setter
+        public void SetTitle(string title)
+        {
+            this.title = title.ToUpper();
+        }
 
+        public override string ToString()
+        {
+            return title;
+        }
+
+    }   
 }
